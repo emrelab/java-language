@@ -103,7 +103,7 @@ public class Main {
         System.out.println("\n7. Yerel Değişken Türü Çıkarımı Örneği (Java 10+):");
         var myStringVar = "A string!"; // String
         var myListVar = new ArrayList<String>(); // ArrayList<String>
-        var myNumVar = new Integer(123); // Integer
+        var myNumVar = Integer.valueOf(123); // Integer (new Integer(...) JDK 9+ ile kullanımdan kaldırıldı)
         var myClassVar = new MyClass(); // MyClass
         System.out.println("var myStringVar (String): " + myStringVar);
         System.out.println("var myListVar (ArrayList): " + myListVar.getClass().getSimpleName());
