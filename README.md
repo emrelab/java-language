@@ -117,13 +117,6 @@ Notlar ve örnekler, **Jakob Jenkov**'un [Java Language](https://jenkov.com/tuto
 bölümünden yararlanılarak Türkçe olarak hazırlanmıştır. Kod ve notlar **MIT** lisanslıdır —
 bkz. [LICENSE](LICENSE).
 
-## Roadmap
-
-- [ ] Eksik konuları tamamla (14, 38+)
-- [ ] Her örnek için beklenen çıktıyı (`expected-output.txt`) ekle
-- [ ] JUnit 5 + Maven modülü ekleyip örnekleri otomatik test et
-- [ ] Konu notlarını tüm klasörlere yay
-
 ---
 
 ### Summary (English)
