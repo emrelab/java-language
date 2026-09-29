@@ -39,30 +39,32 @@ public class Main {
         // 3. Nesne Veri Tipleri
         // İlkel tiplerin nesne sürümleri ve diğer temel nesne tipleri (ör. String).
         // Nesne tipleri, bellekte bir nesneye referans tutar.
+        // Not: new Integer(1) gibi sarmalayıcı yapıcıları JDK 9+ ile kullanımdan kaldırıldı;
+        // doğru yol valueOf(...) (veya otomatik boxing) kullanmaktır.
         System.out.println("\n3. Nesne Veri Tipleri Örneği:");
         // 3.1 Boolean
-        Boolean myObjBoolean = new Boolean(true);
+        Boolean myObjBoolean = Boolean.valueOf(true);
         System.out.println("Boolean: myObjBoolean = " + myObjBoolean);
         // 3.2 Byte
-        Byte myObjByte = new Byte((byte) 100);
+        Byte myObjByte = Byte.valueOf((byte) 100);
         System.out.println("Byte: myObjByte = " + myObjByte);
         // 3.3 Short
-        Short myObjShort = new Short((short) 30000);
+        Short myObjShort = Short.valueOf((short) 30000);
         System.out.println("Short: myObjShort = " + myObjShort);
         // 3.4 Character
-        Character myObjChar = new Character('A');
+        Character myObjChar = Character.valueOf('A');
         System.out.println("Character: myObjChar = " + myObjChar);
         // 3.5 Integer
-        Integer myObjInteger = new Integer(123456);
+        Integer myObjInteger = Integer.valueOf(123456);
         System.out.println("Integer: myObjInteger = " + myObjInteger);
         // 3.6 Long
-        Long myObjLong = new Long(123456789012L);
+        Long myObjLong = Long.valueOf(123456789012L);
         System.out.println("Long: myObjLong = " + myObjLong);
         // 3.7 Float
-        Float myObjFloat = new Float(3.14f);
+        Float myObjFloat = Float.valueOf(3.14f);
         System.out.println("Float: myObjFloat = " + myObjFloat);
         // 3.8 Double
-        Double myObjDouble = new Double(3.14159);
+        Double myObjDouble = Double.valueOf(3.14159);
         System.out.println("Double: myObjDouble = " + myObjDouble);
         // 3.9 String
         String myString = "Merhaba, Java!";
@@ -71,9 +73,9 @@ public class Main {
         // 4. İlkel Veri Tiplerinin Nesne Sürümlerinin Değişmezliği (Immutability)
         // Nesne tipleri, bir kez oluşturulduktan sonra içindeki değer değiştirilemez.
         System.out.println("\n4. Nesne Tiplerinin Değişmezliği Örneği:");
-        Integer immutableInt = new Integer(45);
+        Integer immutableInt = Integer.valueOf(45);
         System.out.println("Başlangıç immutableInt: " + immutableInt);
-        immutableInt = new Integer(33); // Yeni bir nesne oluşturulur
+        immutableInt = Integer.valueOf(33); // Yeni bir nesne oluşturulur
         System.out.println("Yeni atama sonrası immutableInt: " + immutableInt);
         // Not: immutableInt'in eski nesnesi değiştirilmez, yeni bir nesneye işaret eder.
 
@@ -85,7 +87,7 @@ public class Main {
         Integer boxedInt = primitiveInt; // Otomatik kutulama
         System.out.println("İlkel int: " + primitiveInt + ", Kutu Integer: " + boxedInt);
         // 5.2 Nesneden ilkele (unboxing)
-        Integer objInt = new Integer(33);
+        Integer objInt = Integer.valueOf(33);
         int unboxedInt = objInt; // Otomatik kutudan çıkarma
         System.out.println("Nesne Integer: " + objInt + ", İlkel int: " + unboxedInt);
 
