@@ -64,7 +64,7 @@ Markdown'ı ile birlikte durur.
 | # | Konu | Ne anlatıyor | Kod |
 |---|---|---|---|
 | 30 | **Record** | Immutable veri taşıyıcıları | [`Main.java`](Java%20Language/30-Record/src/Main.java) |
-| 34 | **Anotasyonlar** | Kendi anotasyonunu yazmak | [`Main.java`](Java%20Language/34-Annotations/src/Main.java) |
+| 34 | **Anotasyonlar** | Kendi anotasyonunu yazmak (tek dosya: `MyClass.java`) | [`MyClass.java`](Java%20Language/34-Annotations/src/MyClass.java) |
 | 35 | **Lambda İfadeleri** | Fonksiyonel arayüzler, lambda | [`Main.java`](Java%20Language/35-Lambda-Expressions/src/Main.java) |
 | 36 | **Modüller (JPMS)** | module-info, kapsülleme | [`Main.java`](Java%20Language/36-Modules/src/Main.java) · [not](Java%20Language/36-Modules/src/36-Modules.md) |
 | 37 | **Scoped Assignment & Scoped Access** | Kapsamlı erişim | [`Main.java`](Java%20Language/37-Scopped-Assignment-And-Scoped-Access/src/Main.java) |
